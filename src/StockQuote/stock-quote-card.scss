@@ -20,10 +20,11 @@
     }
 
 .stock-title {
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: $dark-blue;
     text-transform: uppercase;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .stock-symbol-label {
@@ -31,6 +32,7 @@
     text-transform: uppercase;
     line-height: .7em;
     color: $charcoal;
+    opacity: 0.7;
 }
 
 .stock-price {
@@ -40,6 +42,7 @@
 }
     .stock-price-change {
         font-size: .7em;
+        font-weight: bold;
     }
 
 .stock-recent-performance {
@@ -49,5 +52,34 @@
     .stock-recent-performance-detail {
         margin-right: 5px;
     }
+
+.positive-performance {
+    color: $bright-green;
+}
+
+.negative-performance {
+    color: $bright-red;
+}
+
+@media only screen and (max-width: 600px) {
+    .stock-card-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .stock-price {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .stock-card-left {
+        display: none;
+    }
+}
 
 // @TODO - add styles for the stock graph

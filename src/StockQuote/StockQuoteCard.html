@@ -2,13 +2,15 @@
     <!-- @TODO - add the content shown in the mockup -->
 </div>
 <div class="stock-card-right">
-    <h3 class="stock-title"><%- name %></h3>
-    <div class="stock-symbol-label"><%- symbol %></div>
+    <div>
+        <h3 class="stock-title text-brand"><%- name %></h3>
+        <div class="stock-symbol-label"><%- symbol %></div>
+    </div>
     <div class="stock-price">
         <%- formatMoney(price) %>
-        <span class="stock-price-change"><%- formatMoney(change) %> (<%- changePercent %>)</span>
+        <span class="stock-price-change <%- formatMoney(change) >= 0 ? 'positive-performance' : 'negative-performance' %>"><%- formatMoney(change) %> (<%- changePercent %>)</span>
     </div>
-    <div class="stock-recent-performance">
+    <div class="stock-recent-performance d-none d-md-block">
         <span class="stock-recent-performance-detail">OPEN <%- formatMoney(open) %></span>
         <span class="stock-recent-performance-detail">HIGH <%- formatMoney(high) %></span>
         <span class="stock-recent-performance-detail">LOW <%- formatMoney(low) %></span>
