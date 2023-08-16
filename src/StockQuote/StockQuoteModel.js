@@ -29,3 +29,7 @@ export const createFromGlobalQuote = (globalQuote, name) => {
         changePercent: globalQuote["10. change percent"],
     });
 };
+
+export const isQuoteEmpty = (quote) => {
+    return Object.keys(quote).length === 0;
+};
