@@ -2,10 +2,10 @@
 
 ## Notes from Davis:
 
- 1. As of writing this, I have spent approximately an hour on this project.
+ 1. As of writing this, I have spent approximately one hour on this project.
  2. With such little time, my priorities were a balance of looks and functionality. This is why I skipped the graph portion altogether.
  3. As for looks, I prioritized the mobile view first. Refining tablet/desktop views is next on the TODO list.
- 4. I'd like to do some more testing on this, but I'm sticking to the hour limit, so there will probably be bugs.
+ 4. I'd like to do some more testing on this, but I'm sticking to the hour limit, so there will definitely be bugs.
  5. If you run out of daily API calls, feel free to create a new API key [here].
  6. Thank you very much for your time!
 
