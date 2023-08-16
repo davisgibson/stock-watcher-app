@@ -1,5 +1,17 @@
 # Stock Watcher
 
+## Notes from Davis:
+
+ 1. As of writing this, I have spent approximately an hour on this project.
+ 2. With such little time, my priorities were a balance of looks and functionality. This is why I skipped the graph portion altogether.
+ 3. As for looks, I prioritized the mobile view first. Refining tablet/desktop views is next on the TODO list.
+ 4. I'd like to do some more testing on this, but I'm sticking to the hour limit, so there will probably be bugs.
+ 5. If you run out of daily API calls, feel free to create a new API key [here].
+ 6. Thank you very much for your time!
+
+
+## Overview:
+
 Your task is to help complete a simple web application which allows a user to
 add basic stock tickers to a dashboard.  To add a stock, the user enters the
 symbol of their desired stock (e.g. `GOOG`, `AAPL`, or `TSLA`) into a text
@@ -28,7 +40,7 @@ link.
 - [x] Replace color values with variables from `./src/variables.scss`.
 - [ ] Add styles to `./src/Main/main.scss` so that the application matches the design.
 - [x] Complete the `mainView.on("stockSearch"...` callback function in `./src/index.js`
-- [ ] Alphavantage returns a 200 response even in the cases that the symbol
+- [x] Alphavantage returns a 200 response even in the cases that the symbol
     input by the user is not found, or we've exceeded the max number of requests
     allowed - please handle these responses and any other unexpected response
     gracefully.
@@ -68,3 +80,6 @@ link.
 
 [nodejs.org]: https://nodejs.org/en/
 [design]: ./design
+[here]: https://www.alphavantage.co/support/#api-key
+
+

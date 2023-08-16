@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addInitialQuotesToCollection = (globalQuotesArray) => {
         // there is probably a better way to check if the initial data is empty
         if(isQuoteEmpty(globalQuotesArray[0]))
-            return alert('Looks like you\'ve ran out of API calls for now. Try a different API key (it\'s free) or try again later.');
+            return alert('Looks like you\'ve ran out of API calls for now. Try again later.');
         globalQuotesArray.forEach(function(index, quote) {
             addNewQuoteToCollection(quote);
         });

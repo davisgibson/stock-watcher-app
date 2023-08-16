@@ -19,19 +19,6 @@ const getApiData = (symbol) => {
     let url = baseUrl
     url.search = new URLSearchParams({function: 'GLOBAL_QUOTE', symbol, 'apikey': apiKey} ).toString();
 
-//     return `{
-//     "01. symbol": "AAPL",
-//     "02. open": "178.8800",
-//     "03. high": "179.4800",
-//     "04. low": "177.0500",
-//     "05. price": "177.4500",
-//     "06. volume": "43622593",
-//     "07. latest trading day": "2023-08-15",
-//     "08. previous close": "179.4600",
-//     "09. change": "-2.0100",
-//     "10. change percent": "-1.1200%"
-// }`;
-
     return fetch(url.toString(), {method: 'GET'})
         .then(response => response.json())
         .then(x => x['Global Quote'] || {})
